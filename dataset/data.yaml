@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 2
+names: ['ball', 'player']
+
+roboflow:
+  workspace: renatas-workspace-bae6f
+  project: renatas-workspace-bae6f
+  version: dataset
+  license: Private
+  url: https://app.roboflow.com/renatas-workspace-bae6f/renatas-workspace-bae6f/dataset
