@@ -111,42 +111,43 @@ The system automatically estimates the field boundaries, the halfway line and th
 4. Continue by adding the required files to the project root
 
     final-project-AI-II/
-    |-- 2023_05_05_15_02_22-players-and-ball-detection.mp4
-    |-- SoccerField.v2-v2.yolo26.zip        
+    |-- 2023_05_05_15_02_22-players-and-ball-detection.mp4    
 
 5. Open and run the notebook which is Initial_implementation_of_a_DL_Pipeline.ipynb
 
     The notebook is divided into the following stages:
 
-    Stage 1. Data preparation: Extract 405 frames using fixed‑interval sampling in two passes
+    Stage 1. Data preparation: Extract 705 frames using fixed‑interval sampling in two phases.
    
-    Stage 2. Data labeling: Load the Roboflow zip and pull out the annotated frames
+    Stage 2. Data labeling: Load the Roboflow zip and extract the annotated frames.
    
-    Stage 3. Dataset split: Divide frames into 70 percent training, 15 percent validation, 15 percent testing
+    Stage 3. Dataset split: Divide frames into 70 percent training, 15 percent validation, 15 percent testing.
    
-    Stage 4. Model training: Fine‑tune yolo26n.pt for 100 epochs
+    Stage 4. Model training: Fine‑tune yolo26n.pt for 250 epochs. (This step can be skipped since train-7, the best model, is already present in the repository.)
    
-    Stage 5. Validation: Test the best checkpoint on the evaluation set
+    Stage 5. Validation: Test the best checkpoint on the unseen Test set.
    
     Stage 6. Video prediction: Run the pipeline on the full video and save the output as live_analysis.mp4
-   
-
-    In order to skip re-training and use the already fine-tuned weights, you can go directly to the Predictions section. Make sure runs/detect/train-4/weights/best.pt is present by already having it committed to the repo.
 
 ---
 
 ## Expected Output
 
+live_analysis.mp4
+
 Each frame of the video shows:
 
-- Red bounding boxes: players detected, with confidence and zone  
-- Cyan dot: ball position  
-- White polygon: field boundary estimated with HSV segmentation  
-- White vertical line: halfway line  
+- Players with bounding boxes, color coded to the zone they are in.
+- Ball with bounding box and "ball" text.
+- White polygon: Field boundary.
+- Green polygon: Field's Left half boundary. 
+- Orange polygon: Field's Right half boundary. 
+- Blue polygon: Field's left penalty zone. 
+- Red polygon: Field's right penalty zone. 
 
 The following is an example of the analytics panel:
 
-Total players: 13  
+Total players: 12
 Players in the left half: 8  
 Players in the right half: 4  
 Ball position: left half  
@@ -160,7 +161,7 @@ Players outside the field: 0
 
 Architecture: YOLO26n  
 Pre-trained on: COCO (yolo26n.pt)  
-Fine-tuning epochs: 100  
+Fine-tuning epochs: 250  
 Image size: 1280 px  
 Batch size: 8  
 Loss weights: box 12.0, cls 3.0, dfl 2.0  
@@ -179,12 +180,12 @@ Precision for player, Precision for ball, Recall for player, Recall for ball, F1
 ## Dataset
 
 Source: Aerial video with 3,840 frames at 1280x720 and 30 fps  
-Sampling strategy: First pass every 20 frames for 192 frames, second pass every 4 frames until reaching 575 in total  
+Sampling strategy: First pass every 20 frames for 192 frames, second pass every 4 frames until reaching 705 in total  
 Annotation tool: Roboflow at https://roboflow.com  
 Format: YOLO txt, one label file per image  
 Classes: ball as 0, player as 1  
-Total annotated: 575 frames after the Roboflow export  
-Split: 387 training, 83 validation, 83 testing  
+Total annotated: 705 frames after the Roboflow export  
+Split: Train 492, Val 105, Test 106
 
 
 ---
