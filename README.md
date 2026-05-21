@@ -1,7 +1,8 @@
 # Sports Analytics using Deep Learning -- AI II Final Project
 
 Universidad de Monterrey - Escuela de Ingenieria y Tecnologias
-Course: Artificial Intelligence II - Lecturer: Dr. Andres Hernandez Gutierrez
+Course: Artificial Intelligence I.
+Lecturer: Dr. Andres Hernandez Gutierrez
 Name: Einer Barba Abdala (595839)
 Name: Renata Garcia Morales (612194)
 
@@ -31,11 +32,11 @@ The system automatically estimates the field boundaries, the halfway line and th
 
     final-project-AI-II/
     |
-    |-- Initial_implementation_of_a_DL_Pipeline.ipynb   # Full pipeline notebook
-    |-- yolo26n.pt                                       # Base YOLOv8n checkpoint (COCO)
+    |-- Initial_implementation_of_a_DL_Pipeline.ipynb   
+    |-- yolo26n.pt                                      
     |-- runs/
     |   |-- detect/
-    |       |-- train-4/weights/best.pt                  # Fine-tuned weights (best epoch)
+    |       |-- train-4/weights/best.pt                  
     |-- split/
     |   |-- train/images & labels   # 387 training samples
     |   |-- val/images & labels     # 83 validation samples
