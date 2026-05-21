@@ -2,12 +2,11 @@
 
 Universidad de Monterrey - Escuela de Ingenieria y Tecnologias
 
-Course: Artificial Intelligence I.
+Course: Artificial Intelligence II.
 
-Lecturer: Dr. Andres Hernandez Gutierrez
-Name: Einer Barba Abdala (595839)
+Name: Einer Barba Abdala ID: 595839
 
-Name: Renata Garcia Morales (612194)
+Name: Renata García Morales ID: 612194
 
 ---
 
@@ -32,23 +31,49 @@ The system automatically estimates the field boundaries, the halfway line and th
 ---
 
 ## Structure of the repository 
-
+    
     final-project-AI-II/
     |
-    |-- Initial_implementation_of_a_DL_Pipeline.ipynb   
-    |-- yolo26n.pt                                      
-    |-- runs/
-    |   |-- detect/
-    |       |-- train-4/weights/best.pt                  
-    |-- split/
-    |   |-- train/images & labels   # 387 training samples
-    |   |-- val/images & labels     # 83 validation samples
-    |   |-- test/images & labels    # 83 test samples
-    |   |-- data.yaml
-    |-- predictions/
-    |   |-- live_analysis.mp4       # Annotated output video
+    |-- Initial_implementation_of_a_DL_Pipeline.ipynb
+    |-- yolo26n.pt
+    |-- SoccerField.v2-v2.yolo26.zip
     |-- requirements.txt
     |-- README.md
+    |-- Final project: Sports Analytics using Deep Learning Models.pdf
+    |-- .gitignore
+    |
+    |-- split/
+    |   |-- train/
+    |   |   |-- images/
+    |   |   |-- labels/
+    |   |-- val/
+    |   |   |-- images/
+    |   |   |-- labels/
+    |   |-- test/
+    |   |   |-- images/
+    |   |   |-- labels/
+    |   |-- data.yaml
+    |
+    |-- runs/
+    |   |-- detect/
+    |       |-- train/
+    |       |-- train-2/
+    |       |-- train-3/
+    |       |-- train-4/
+    |       |   |-- weights/
+    |       |       |-- best.pt
+    |       |-- train-5/
+    |       |-- train-6/
+    |       |-- train-7/
+    |       |-- val/
+    |       |-- val-2/
+    |       |-- val-3/
+    |       |-- val-4/
+    |
+    |-- predictions/
+    |   |-- live_analysis.mp4
+    |   |-- saved_geometry/
+    |       |-- manual_setup.json
 
 
 ---
