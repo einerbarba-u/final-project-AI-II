@@ -226,5 +226,5 @@ frames.zip
 field_frames.zip
 inference_frames/
 inference_results/
-predictions/
+predictions/live_analysis.mp4
 FieldDetect.yolo26.zip
