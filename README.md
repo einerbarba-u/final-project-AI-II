@@ -2,11 +2,11 @@
 
 Universidad de Monterrey - Escuela de Ingenieria y Tecnologias
 
-Course: Artificial Intelligence I.
+Course: Artificial Intelligence II.
 
-Name: Einer Barba Abdala (595839)
+Name: Einer Barba Abdala ID: 595839
 
-Name: Renata García Morales (612194)
+Name: Renata García Morales ID: 612194
 
 ---
 
