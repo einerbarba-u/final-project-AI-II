@@ -93,11 +93,17 @@ The system automatically estimates the field boundaries, the halfway line and th
     The notebook is divided into the following stages:
 
     Stage 1. Data preparation: Extract 405 frames using fixed‑interval sampling in two passes
+   
     Stage 2. Data labeling: Load the Roboflow zip and pull out the annotated frames
+   
     Stage 3. Dataset split: Divide frames into 70 percent training, 15 percent validation, 15 percent testing
+   
     Stage 4. Model training: Fine‑tune yolo26n.pt for 100 epochs
+   
     Stage 5. Validation: Test the best checkpoint on the evaluation set
+   
     Stage 6. Video prediction: Run the pipeline on the full video and save the output as live_analysis.mp4
+   
 
     In order to skip re-training and use the already fine-tuned weights, you can go directly to the Predictions section. Make sure runs/detect/train-4/weights/best.pt is present by already having it committed to the repo.
 
