@@ -86,7 +86,7 @@ The system automatically estimates the field boundaries, the halfway line and th
 
     final-project-AI-II/
     |-- 2023_05_05_15_02_22-players-and-ball-detection.mp4
-    |-- SoccerField.yolo26.zip        
+    |-- SoccerField.v2-v2.yolo26.zip        
 
 5. Open and run the notebook which is Initial_implementation_of_a_DL_Pipeline.ipynb
 
