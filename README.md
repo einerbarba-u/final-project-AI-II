@@ -39,6 +39,7 @@ The system automatically estimates the field boundaries, the halfway line and th
     |-- SoccerField.v2-v2.yolo26.zip
     |-- requirements.txt
     |-- README.md
+    |-- Final project: Sports Analytics using Deep Learning Models.pdf
     |-- .gitignore
     |
     |-- split/
