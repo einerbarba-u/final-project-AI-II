@@ -227,4 +227,4 @@ field_frames.zip
 inference_frames/
 inference_results/
 predictions/
-field_yolo26.zip
+FieldDetect.yolo26.zip
