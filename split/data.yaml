@@ -3,10 +3,10 @@ names:
 - player
 nc: 2
 roboflow:
-  license: Private
-  project: renatas-workspace-bae6f
-  url: https://app.roboflow.com/renatas-workspace-bae6f/renatas-workspace-bae6f/dataset
-  version: dataset
+  license: CC BY 4.0
+  project: soccerfield-piiip
+  url: https://universe.roboflow.com/renatas-workspace-bae6f/soccerfield-piiip/dataset/2
+  version: 2
   workspace: renatas-workspace-bae6f
 test: test/images
 train: train/images
