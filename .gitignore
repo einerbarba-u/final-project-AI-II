@@ -220,8 +220,11 @@ __marimo__/
 # Large files
 dataset/
 SoccerField.yolo26.zip
+SoccerField.v2-v2.yolo26.zip
 2023_05_05_15_02_22-players-and-ball-detection.mp4
 frames.zip
+field_frames.zip
 inference_frames/
 inference_results/
 predictions/
+field_yolo26.zip
