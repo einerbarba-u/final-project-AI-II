@@ -35,6 +35,7 @@ The system automatically estimates the field boundaries, the halfway line and th
     final-project-AI-II/
     |
     |-- Initial_implementation_of_a_DL_Pipeline.ipynb
+    |-- PDF_Initial_implementation_of_a_DL_Pipeline.pdf
     |-- yolo26n.pt
     |-- SoccerField.v2-v2.yolo26.zip
     |-- requirements.txt
